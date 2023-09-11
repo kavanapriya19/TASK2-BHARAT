@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <table align="center" id="tab" cellspacing="10">
+        <caption>Temparature Converter</caption>
+        <tr>
+            <td colspan="2">
+                <p id="result"> </p>
+            </td>
+        </tr>     
+        <tr></tr>
+        <tr>
+            <td>
+               <label>From:<select id="input1">
+                    <option></option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Farenheit">Farenheit</option>
+                </select>
+                </label>
+            </td>
+            <td>
+                <label>To:<select id="input2">
+                    <option></option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Farenheit">Farenheit</option>
+                </select>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td id="inps"><input type="number" id="i1" placeholder="Enter temperature"></td>
+            <td id="inps"><input type="number" id="i2" readonly placeholder="Output"></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr><tr></tr>
+        <tr></tr>     
+        <tr>
+            <td>
+                <button id="convert" onclick="convert()" style="height: auto;border: none; padding: 10px;color: white;border-radius: 23px;font-size: small;background-color: green;">Convert</button>
+            </td>
+            <td><input type="reset" id="clr" name="Clear" onclick="clr()" style="height: auto;border: none; padding: 10px;color: white;border-radius: 23px;font-size: small;background-color:Red;"></td>
+        </tr>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
